@@ -1,6 +1,6 @@
 
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 // --> 7)  Mount the Logger middleware here
 
@@ -14,7 +14,11 @@ console.log('Hello World');
 
 /** 2) A first working Express Server */
 
+app.listen(3000);
 
+app.get('/', (req, res) => {
+  res.send('Hello Express');
+});
 
 /** 3) Serve an HTML file */
 
