@@ -14,10 +14,10 @@ console.log('Hello World');
 
 /** 2) A first working Express Server */
 
-app.listen(3000);
+// app.listen(3000);
 
 app.get('/', (req, res) => {
-  res.send('Hello Express');
+  res.sendFile(`${__dirname}/index.html`);
 });
 
 /** 3) Serve an HTML file */
